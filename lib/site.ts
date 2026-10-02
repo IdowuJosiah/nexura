@@ -11,7 +11,7 @@ export const site = {
     "Nexura is a full-service creator management agency. We handle growth, marketing, fan engagement and brand strategy so creators can focus on creating.",
   email: "contactnexura@gmail.com",
   location: "Florida, USA",
-  url: "https://nexura.vercel.app", // update when you connect a domain
+  url: "https://nexura-olive.vercel.app", // update when you connect a domain
   // Add handles when ready; empty values are hidden automatically.
   socials: { instagram: "", x: "", telegram: "" },
 };
