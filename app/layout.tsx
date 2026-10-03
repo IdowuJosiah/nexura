@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RevealFooter from "@/components/RevealFooter";
 import { site } from "@/lib/site";
 
 const cormorant = Cormorant_Garamond({
@@ -31,8 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <main className="relative z-10 flex-1 bg-ink shadow-[0_40px_60px_-20px_rgba(0,0,0,0.85)]">{children}</main>
+        <RevealFooter>
+          <Footer />
+        </RevealFooter>
       </body>
     </html>
   );
